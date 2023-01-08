@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    background-size: 100vw 100vh;
+}
+
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --dark-blue:hsl(224, 23%, 55%);
+    --desaturated-blue:hsl(223, 47%, 23%);
+    --hover-color:rgb(116, 92, 221);
+}
+/* Main Container */
+.main
+{   
+    width: 100%;
+    height: 100vh;
+    background: url(images/pattern-background-mobile.svg) no-repeat;
+    background-size: contain;
+    background-color: #E1E9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*****************/
+/* Container */
+.container {
+    background-color: var(--very-pale-blue);
+    width: 80%;
+    border-radius: 1em;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+.music-image img{
+    width: 100%;
+}
+
+/* Content Section */
+.content{
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    text-align: center;
+    margin: 1em 0; 
+}
+.header > h2{
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    text-transform: capitalize;
+}
+.header > p{
+    padding:1em;
+    line-height: 1.5em;
+    color: var(--dark-blue);
+}
+/** End of The header Section **/
+/* Annual Section */
+.annual
+{   
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 1em;
+    display: flex;
+    border-radius: 0.5em;
+    background-color: hsla(224, 23%, 55%, 0.06);
+    padding: 0.5em 0;
+}
+.annual img{
+    align-self: center;
+    padding-left: 0.5em;
+}
+.price-items{
+    width: 100%;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: center;
+    font-size: 0.9em;
+}
+.price-items .annual-plan{
+    font-weight: 900;
+    padding-bottom: 0.3em;
+    color: var(--desaturated-blue);
+}
+.price-items .price {
+    color: var(--dark-blue);
+}
+.annual > a{
+    font-size: 0.9em;
+    font-weight: 700;
+    align-self: center;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    margin-right: 1em;
+    color: rgb(50, 0, 46);
+    transition: border 0.5s , color 0.5s;
+}
+/* End of Annual Section */
+/* Button Section */
+.btns{
+    width:100%;
+    height: 20%;
+    margin-bottom: 2em;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    width: 100%;
+    background-color:var(--bright-blue);
+    color: white;
+    font-size: 1em;
+    padding: 0.5em;
+    border:none;
+    border-radius: 0.5em;
+    box-shadow: 0 5px 10px #aaa ;
+    transition: background 0.5s;
+}
+.btns a{
+    color: var(--dark-blue);
+    text-decoration: none;
+    margin-top: 1.5em;
+    font-size: 1em;
+    font-weight: 700;
+    transition: color 1s;
+}
+/* End Of Button Section */

@@ -1,0 +1,29 @@
+@media screen and (min-width: 480px) {
+    .main{
+        background: url(images/pattern-background-desktop.svg) no-repeat;
+        background-size: contain;
+        background-color: #E1E9FF;
+    }
+    .container {
+        width: 23em;
+    }
+    button{
+        font-size: 0.9em;
+    }
+    button:hover{
+        background-color: rgb(116,92,221);
+        cursor: pointer;
+    }
+    .btns > a:hover{
+        color: hsl(223, 47%, 23%);
+    }
+    .annual a:hover{
+        border-color :transparent;        
+        color: rgb(116, 92, 221);
+    }
+  }
+@media  screen and (max-width:375px) {
+    .container{
+        width: 97%;
+    }
+}
